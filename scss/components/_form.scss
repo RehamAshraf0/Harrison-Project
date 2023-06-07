@@ -1,0 +1,117 @@
+.form {
+  &__header {
+    margin-bottom: 3.8rem;
+  }
+
+  &__header-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1000px) {
+      gap: unset;
+      margin-top: 2rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+      flex-direction: column;
+      align-items: start;
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+  }
+
+  &__header-item {
+    display: flex;
+    @media only screen and (max-width: 1200px) {
+      gap: 0.5rem;
+    }
+  }
+
+  &__num {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    color: $light-green;
+    border: 0.1rem solid currentColor;
+    border-radius: 50%;
+    height: 3.4rem;
+    width: 3.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "GT America", sans-serif;
+  }
+  &__heading {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: $dark-green;
+    background-color: $white;
+    transform: translateX(-1rem);
+    padding: 0.5rem;
+  }
+
+  &__line {
+    stroke: $lighter-green;
+    stroke-dasharray: 0.9rem;
+  }
+
+  &__svg {
+    stroke-width: 0.1rem;
+
+    @media only screen and (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 1.5rem;
+
+    @media only screen and (max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__input {
+    padding: 0.8rem 1.5rem;
+    font-weight: 300;
+    font-family: inherit;
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+    color: $light-green;
+    background-color: $greenish-white;
+    border: none;
+
+    width: 100%;
+
+    &--full {
+      grid-column: 1/3;
+      @media only screen and (max-width: 500px) {
+        grid-column: unset;
+      }
+    }
+
+    &--tall {
+      min-height: 7.5rem;
+    }
+  }
+
+  &__btn-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__main-btn {
+    padding: 0.75rem 2rem;
+  }
+}

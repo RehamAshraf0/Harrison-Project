@@ -1,0 +1,38 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1.1fr 1.9fr;
+  gap: 8.9rem;
+  padding: 12rem 3.5rem;
+
+  @media only screen and (max-width: 1124px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    padding: 3.5rem;
+  }
+
+  @media only screen and (max-width: 880px) {
+    margin-top: -10rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+  }
+
+  &__divider {
+    border: none;
+    border-bottom: 0.1rem solid $lightest-green;
+  }
+
+  &__form {
+    border: 0.1rem solid $light-green;
+    padding: 8.6rem 8.8rem;
+
+    @media only screen and (max-width: 600px) {
+      padding: 3.5rem;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 9rem;
+  align-items: center;
+
+  padding-bottom: 10.4rem;
+
+  @media only screen and (max-width: 1250px) {
+    padding: 0 3.5rem 10.4rem;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    padding: 0 3.5rem 6.5rem;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    &:nth-child(1) {
+      width: 95%;
+    }
+
+    &:nth-child(2) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: 650px) {
+      width: 100%;
+    }
+  }
+
+  &__btns-container {
+    display: flex;
+    gap: 4rem;
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}

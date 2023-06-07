@@ -1,0 +1,46 @@
+.container {
+  max-width: 150.8rem;
+  margin: 0 auto;
+}
+
+.sm-none {
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+.horizontal-line {
+  height: 0.8rem;
+  width: 15%;
+  background-color: $lighter-green;
+}
+
+.horizontal-line-2 {
+  height: 0.3rem;
+  width: 12.5%;
+  background-color: $lighter-green;
+}
+
+.mt-md {
+  margin-top: 11.2rem;
+  @media only screen and (max-width: 1000px) {
+    margin-top: unset;
+  }
+}
+
+.header-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+
+  .par {
+    width: 50%;
+
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.main-btn {
+  text-decoration: none;
+  color: $white;
+
+  display: flex;
+  align-self: start;
+
+  font-family: "GT America", sans-serif;
+  font-weight: 300;
+
+  &--wide &__text {
+    padding: 0.75rem 3rem;
+  }
+
+  &--light &__text {
+    background-color: $light-green;
+  }
+  &--light &__icon {
+    background-color: $lightest-green;
+  }
+
+  &--inverted &__text,
+  &--dark &__text {
+    background-color: $light-green;
+  }
+  &--dark &__icon {
+    background-color: $dark-green;
+  }
+
+  &--inverted &__icon {
+    background-color: $lighter-green;
+  }
+
+  & > * {
+    transition: all 0.4s ease;
+
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__text {
+    background-color: $lighter-green;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.4rem;
+    letter-spacing: 0.06em;
+    line-height: 2.7rem;
+    padding: 0.75rem 1.8rem;
+  }
+
+  &__icon {
+    background-color: $dark-green;
+    font-size: 1.73rem;
+    padding: 1.2rem 0.8rem;
+  }
+
+  &:hover &__text {
+    background-color: $dark-green;
+  }
+  &:hover &__icon {
+    background-color: $lighter-green;
+  }
+
+  &--inverted:hover &__text {
+    background-color: $lighter-green;
+  }
+
+  &--inverted:hover &__icon {
+    background-color: $dark-green;
+  }
+}
+
+.sec-btn {
+  color: $beige;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+  font-weight: 300;
+  padding-bottom: 0.55rem;
+  border-bottom: 0.1 rem solid currentColor;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

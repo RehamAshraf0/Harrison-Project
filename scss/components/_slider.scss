@@ -1,0 +1,61 @@
+.slider {
+  &__controller-container {
+    position: relative;
+    grid-row: 2/3;
+
+    @media only screen and (max-width: 1000px) {
+      order: 3;
+      grid-row: unset;
+      padding-top: 35%;
+    }
+
+    @media only screen and (max-width: 650px) {
+      align-self: start;
+      padding-top: 45%;
+    }
+
+    @media only screen and (max-width: 400px) {
+      padding-top: 40%;
+    }
+  }
+
+  &__controller {
+    position: absolute;
+    right: 20%;
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    width: 100%;
+
+    @media only screen and (max-width: 1000px) {
+      height: unset;
+    }
+  }
+
+  &__line {
+    width: 75%;
+    height: 0.1rem;
+    background-color: $darker-green;
+  }
+
+  &__btns-container {
+    margin-left: 1.7rem;
+    margin-right: 5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.1rem solid $darker-green;
+
+    &--active {
+      background-color: $darker-green;
+    }
+  }
+}

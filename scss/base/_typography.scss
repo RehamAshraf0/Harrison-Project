@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500:600;700;900&display=swap");
+
+@font-face {
+  font-family: "GT America";
+  font-weight: 700;
+  src: url("../assets/fonts/gt_america_bold-webfont.woff") format("woff"),
+    url("../assets/fonts/gt_america_bold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GT America";
+  font-weight: 400;
+  src: url("../assets/fonts/gt-america-standard-regular-trial-webfont.woff")
+      format("woff"),
+    url("../assets/fonts/gt-america-standard-regular-trial-webfont.woff2")
+      format("woff2");
+}
+@font-face {
+  font-family: "GT America";
+  font-weight: 300;
+  src: url("../assets/fonts/gt-america-standard-thin-trial-webfont.woff")
+      format("woff"),
+    url("../assets/fonts/gt-america-standard-thin-trial-webfont.woff2")
+      format("woff2");
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.heading {
+  font-size: 3rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+  color: $darker-green;
+  letter-spacing: 0.03em;
+  font-family: "GT America", sans-serif;
+  font-weight: 700;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.02em;
+  }
+
+  &--dark {
+    color: $dark-grey;
+  }
+
+  &--lower {
+    text-transform: none;
+  }
+
+  &--light {
+    color: $white;
+  }
+
+  &--wide {
+    letter-spacing: 0.128em;
+  }
+}
+
+.heading-2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-family: "GT America", sans-serif;
+
+  &--dark {
+    color: $dark-grey;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.heading-sm {
+  font-size: 2.6rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.03em;
+  color: $light-green;
+  font-family: "GT America", sans-serif;
+  font-weight: 400;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+
+  &--light {
+    color: $lightest-green;
+  }
+}
+
+.par {
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: $darker-green;
+
+  &--dark {
+    color: $darker-green;
+  }
+
+  &--darker {
+    color: $dark-grey;
+  }
+
+  &--light {
+    color: $white;
+  }
+
+  &--bold {
+    font-weight: 500;
+  }
+
+  @media only screen and (max-width: 1250px) {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+  }
+}
